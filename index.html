@@ -7,9 +7,69 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="header">CRUDS</h1>
-    
+    <!-- Start Projects -->
+    <div id="crud">
+        <!-- Start header -->
+        <div id="header">
+            <h1 id="title">CRUDS</h1>
+            <h3 id="p-one">Project Mangment System</h3>
+        </div>
+        <!-- end header -->
+        <!-- Inputs App Like Name of products and price -->
+        <div id="inputs">
+            <input placeholder="Name Product" type="text" id="Name-Product">
+            <div id="price">
+                <input placeholder="Price" type="number" id="price-Product">
+                <input placeholder="Taxes" type="number" id="taxes-Product">
+                <input placeholder="ADS" type="number" id="ads-Product">
+                <input placeholder="Discount" type="number" id="discount-Product">
+                <small id="total">Total : 123 EGP</small>
+            </div>
+            <input placeholder="Count" type="text" id="count">
+            <input placeholder="Category" type="text" id="category">
+            <button id="submit">Create</button>
+        </div>
+        <!-- End inputs products -->
+        <!-- Start outputs  -->
+        <div id="outputs">
+            <div id="serch-bar">
+                <input placeholder="Search" type="text" id="search">
+                <div id="btn-switch">
+                    <button id="search-by-name">Search by name</button>
+                    <button id="search-by-category">Search by category</button>
+                </div>
+            </div>
+        </div>
 
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>price</th>
+                <th>Taxes</th>
+                <th>ADS</th>
+                <th>Discount</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>samsung</td>
+                    <td>5000</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>phone</td>
+                    <td><button id="update">Update</button></td>
+                    <td><button id="delete">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- End App happy end -->
     <script src="./JS/main.js"></script>
 </body>
 </html>
