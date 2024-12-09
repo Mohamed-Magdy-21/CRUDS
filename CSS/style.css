@@ -35,17 +35,15 @@ input:focus{
     background-color: black;
 }
 
-small{
-    color: white;
-}
 
 #price #total{
     background-color: red;
+    color: white;
     border-radius: 2px;
     border: none;
     outline: none;
     padding: 0px 10px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #price input{

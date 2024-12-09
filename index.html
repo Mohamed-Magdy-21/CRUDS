@@ -17,13 +17,13 @@
         <!-- end header -->
         <!-- Inputs App Like Name of products and price -->
         <div id="inputs">
-            <input placeholder="Name Product" type="text" id="Name-Product">
+            <input placeholder="Name Product" type="text" id="name-product">
             <div id="price">
-                <input placeholder="Price" type="number" id="price-Product">
-                <input placeholder="Taxes" type="number" id="taxes-Product">
-                <input placeholder="ADS" type="number" id="ads-Product">
-                <input placeholder="Discount" type="number" id="discount-Product">
-                <small id="total">Total : 123 EGP</small>
+                <input onkeyup="gettotal()" placeholder="Price" type="number" id="price-product">
+                <input onkeyup="gettotal()" placeholder="Taxes" type="number" id="taxes-product">
+                <input onkeyup="gettotal()" placeholder="ADS" type="number" id="ads-product">
+                <input onkeyup="gettotal()" placeholder="Discount" type="number" id="discount-product">
+                <small id="total">Total : EGP</small>
             </div>
             <input placeholder="Count" type="text" id="count">
             <input placeholder="Category" type="text" id="category">
