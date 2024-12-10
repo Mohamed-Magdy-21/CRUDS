@@ -29,3 +29,39 @@ if(price != ''){
 }
 
 }
+
+
+// Object profucts 
+
+let DataPro;  // this is mine of Project  
+if (localStorage.getItem('product') != null) {
+    DataPro = JSON.parse(localStorage.getItem('product'));
+} else {
+    DataPro = [];
+}
+
+Submit.onclick = function() {
+    let NewPro = {
+        name: NameProduct.value,
+        price: PriceProduct.value,
+        taxes: TaxesProduct.value,
+        ads: ADSProduct.value,
+        discount: DiscountProduct.value,
+        count: Count.value,
+        category: Category.value,
+        total: TotalPrice.innerHTML,
+    }
+    DataPro.push(NewPro);
+    localStorage.setItem('product', JSON.stringify(DataPro));
+
+    // Clear inputs 
+    NameProduct.value = '';
+    PriceProduct.value = '';
+    TaxesProduct.value = '';
+    ADSProduct.value = '';
+    DiscountProduct.value = '';
+    Count.value = '';
+    Category.value = '';
+    TotalPrice.innerHTML = `Total : EGP`;
+    TotalPrice.style.background = 'red'; 
+}
